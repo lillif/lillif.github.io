@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>LF</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Homemade Apple" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <!-- my NAVBAR -->
+
+    <nav class="my_nav" id="mynav">
+      <button class="nav_btn hide" id="mynavbutton">
+        <div class="nav_shape"></div>
+        <div class="nav_shape" style=" margin: 1px 0 1px 9px;"></div>
+        <div class="nav_shape"></div>
+      </button>
+      <ul class="nav_list" id="mynavlist">
+        <li class="nav_link">
+          <a href="#about">About</a>
+        </li>
+        <li class="nav_link">
+          <a href="#skills">Skills</a>
+        </li>
+        <li class="nav_link">
+          <a href="#projects">Projects</a>
+        </li>
+        <a class="my-btn nav_link resume" href="mailto:ljfreischem@gmail.com">Get in touch</a>
+      </ol>
+    </nav>
+  </header>
+  <main>
+    <section class="introduction element hidden" id="intro">
+      <center>
+        <h1>Lilli Freischem</h1>
+      </center>
+    </section>
+
+
+    <section class="element textPanel hidden" id="about">
+      <center><h2>About</h2></center>
+      <div class="body">
+        <center>
+          <p>
+            I'm a PhD student in  <a href="https://www.physics.ox.ac.uk/research/subdepartment/atmospheric-oceanic-and-planetary-physics">Atmospheric, Oceanic and Planetary Physics</a> at 
+            the <a href="https://www.physics.ox.ac.uk/research/subdepartment/atmospheric-oceanic-and-planetary-physics">University of Oxford</a>.<br />
+
+            My research focuses on evaluating and constraining storm-resolving climate models.
+          </p>
+        </center>
+      </div>
+    </section>
+
+
+    <section class="element textPanel hidden" id="skills">
+      <center><h2>Skills</h2></center>
+      <div class="body">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <center>
+                <img src="icons/coding.png" alt="GitHub" class="skills-icon" target="_blank" />
+                <h3>Programming</h3>
+                <p>
+                  <b>Python</b>, 
+                  <b>MATLAB</b>, 
+                  <b>C/C++</b>,
+                  Java, JavaScript, HTML, CSS
+                </p>
+              </center>
+            </div>
+            <div class="col-sm">
+              <center>
+                <img src="icons/brain.png" alt="GitHub" class="skills-icon" target="_blank" />
+                <h3>Machine Learning</h3>
+                <p>
+                  <b>PyTorch</b>, 
+                  <b>TensorFlow</b>, 
+                  <b>scikit-learn</b>
+                </p>
+              </center>
+            </div>
+            <div class="col-sm">
+              <center>
+                <img src="icons/language.png" alt="GitHub" class="skills-icon" target="_blank" />
+                <h3>Languages</h3>
+                <p>
+                  <b>German</b>, 
+                  <b>English</b>, 
+                  French
+                </p>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <section class="element textPanel hidden" id="projects">
+      <center><h2>Projects</h2></center>
+      <div class="body">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <center>
+                <h3>Machine learning for analysing metabolic networks (Dissertation)</h3>
+                <p>
+                  Developed a machine learning pipeline for the identification of cellular targets for disease treatments using models of genome-scale metabolic networks.
+                  </br>
+                  (paper presented at the <a href="https://www.ifac-control.org/conferences/foundations-of-systems-biology-in-engineering-9th-fosbe-2022">
+                    FOSBE 2022</a>, 
+                   available at: <a href="https://doi.org/10.1016/j.ifacol.2023.01.006">
+                    https://doi.org/10.1016/j.ifacol.2023.01.006
+                  </a>)
+                </p>
+              </center>
+            </div>
+            <div class="col-sm">
+              <center>
+                <h3>Sequence-to-sequence forecasting of satellite imagery (Group Project)</h3>
+                <p>
+                  Explored the application of Generative Adversarial Networks developed for video prediction tasks to high-resolution satellite data for solar power nowcasting.
+                  (submitted to <a href=" https://climatehack.ai/">Climate Hack.AI</a> 2022)
+                </p>
+              </center>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+
+    <section class="social">
+      <center>
+        <a href="https://github.com/lillif">
+          <img src="icons/github.png" alt="GitHub" class="social-icon" target="_blank" />
+        </a>
+
+        <a href="https://www.linkedin.com/in/lillifreischem">
+          <img src="icons/linkedin.png" alt="LinkedIn" class="social-icon" target="_blank" />
+        </a>
+
+        <a href="mailto:ljfreischem@gmail.com">
+          <img src="icons/email.png" alt="EMail" class="social-icon" target="_blank" />
+        </a>
+      </center>
+    </section>
+  </main>
+
+  <footer>
+    <p> 
+      &copy; 
+      <a id="link-footer" href="https://github.com/lillif" target="_blank">Lilli Freischem</a>,
+      2023.
+    </p>
+  </footer>
+</body>
+
+<script src="scripts/main.js"></script>
+
+</html>

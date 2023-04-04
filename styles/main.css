@@ -1,0 +1,264 @@
+:root {
+  --bg-color: #ececec;
+  --std-text-color: #000000;
+  --soft-highlight-color: #4484ce;
+  --strong-highlight-color: #f19f4d;
+  --bright-highlight-color: #f9cf00;
+}
+
+.even {
+  background-color: var(--bg-color);
+}
+
+.odd {
+  background-color: #ffffff;
+}
+
+body {
+  font-family: "Kohinoor Telugu";
+  background-color: var(--bg-color);
+}
+
+header {
+  padding: 20px 20px 50px 10px;
+}
+
+footer {
+  /* color: rgba(255, 255, 255, 0.4); */
+  font-size: 13px;
+  margin: 10px 0 30px 0;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--soft-highlight-color);
+  /* opacity: 0.8; */
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--strong-highlight-color);
+  /* opacity: 1; */
+}
+
+.element {
+  color: var(--std-text-color);
+  display: block;
+  margin: 5px 5%;
+  padding: 100px 40px 80px 40px;
+  border-top: white solid 0.03px;
+}
+
+h1{
+  margin-top: -20px;
+  margin-bottom: -20px;
+  }
+
+h2 {
+  font-size: 28px;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.introduction {
+  border-top: none;
+  text-align: center;
+}
+
+
+.location-img {
+  width: 30%;
+  height: 30%;
+}
+
+.my-btn {
+  background: none;
+  border: var(--soft-highlight-color) solid 1px;
+  color: var(--soft-highlight-color);
+  padding: 5px 10px;
+  text-decoration-line: none;
+}
+
+.my-btn:hover {
+  background: rgba(255, 255, 255, 0.4);
+  /* color: var(--soft-highlight-color); */
+  color: var(--strong-highlight-color);
+  text-decoration-line: none;
+}
+
+.my_nav {
+  float: right;
+  margin: 0 0 30px 0;
+  break-after: always;
+}
+
+.nav_link {
+  float: left;
+  margin: 20px;
+  color: var(--soft-highlight-color);
+  font-size: 14px;
+  padding: 5px 12px;
+}
+
+.nav_link a {
+  color: var(--soft-highlight-color);
+}
+
+.nav_link a:hover {
+  color: var(--strong-highlight-color);
+}
+
+.nav_list {
+  list-style-type: none;  
+}
+
+
+.skills-icon {
+  height: 40px;
+  margin: 0 0 10px 0;
+  width: 40px;
+}
+
+.col-sm {
+  margin: 20px 0 0 0;
+}
+
+.social-icon {
+  height: 25px;
+  opacity: 0.5;
+  margin: 0 20px 0 0;
+  width: 25px;
+}
+
+.social-icon:hover {
+  opacity: 0.8;
+}
+
+.textPanel .body {
+  padding: 10px 20px;
+}
+
+/*create collapsed navbar*/
+.nav_btn {
+  background: none;
+  border: none;
+  color: var(--soft-highlight-color);
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+.collapsed_nav {
+  float: left;
+}
+
+.collapsed_list {
+  display: none;
+  position: absolute;
+  background-color: var(--bg-color);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.collapsed_link {
+  float: none;
+  padding: 12px 16px;
+  display: block;
+}
+
+.collapsed_list:hover {
+  background-color: var(--bg-color);
+}
+
+.collapsed_nav:hover .collapsed_list {
+  display: block;
+}
+
+.collapsed_nav:hover .nav_btn .nav_shape {
+  background: var(--soft-highlight-color);
+}
+
+.nav_shape {
+  width: 5px;
+  height: 5px;
+  background: #062f4f;
+  border-radius: 50%;
+}
+
+.hide {
+  display: none;
+}
+
+.lizziespic {
+  margin: 0 0 20px 0;
+  width: 80%;
+  border-radius: 50%;
+}
+
+.lizziespic:hover {
+  animation-name: spin;
+  animation-duration: 300ms;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#link-footer {
+  display: inline;
+}
+
+
+.photo {
+  margin: 40px 0 0 0;
+  opacity: 0.6;
+  width: 70%;
+}
+
+@keyframes getvisible {
+  from {
+    opacity: 0.6;
+    transform: scale(1, 1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.01, 1.01);
+  }
+}
+
+.focusedPic {
+  animation: getvisible 400ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+  transform: scale(1.01, 1.01);
+}
+
+@keyframes reduceOpacity {
+  from {
+    opacity: 1;
+    transform: scale(1.01, 1.01);
+  }
+  to {
+    opacity: 0.6;
+    transform: scale(1, 1);
+  }
+}
+
+.blurredPic {
+  animation: reduceOpacity 400ms;
+  animation-iteration-count: 1;
+  transform: scale(1, 1);
+}
+
