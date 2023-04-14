@@ -46,7 +46,7 @@ a:hover {
   color: var(--std-text-color);
   display: block;
   margin: 5px 5%;
-  padding: 100px 40px 80px 40px;
+  padding: 80px 40px 80px 40px;
   border-top: white solid 0.03px;
 }
 
